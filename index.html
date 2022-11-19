@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>iPhone - Apple</title>
+    <title>IPhone</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="apple, iphone, smartphone" />
-   <meta name="description" content="Clone da página iPhone da Apple" />
+    <meta name="description" content="Clone da página iPhone da Apple" />
     <meta name="author" content="João Marcos" />
-
+    <link rel="shortcut icon" href="public/apple.svg" type="image/x-icon" />
     <link rel="stylesheet" media="(max-width: 600px)" href="src/mobile.css" />
     <link
       rel="stylesheet"
@@ -15,8 +15,6 @@
       href="src/tablet.css"
     />
     <link rel="stylesheet" media="(min-width:800px)" href="src/style.css" />
-
-    <link rel="shortcut icon" href="public/apple.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="plugins/jquery.bxslider.css" />
     <link rel="stylesheet" href="plugins/magnific-popup.css" />
@@ -68,8 +66,15 @@
       <div class="container">
         <img src="imagens/logo_apple_branco.png" id="logo" />
         <nav id="nav">
-          <button id="btn-mobile">Menu
-            <span id="hamburguer-icon" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu"></span>
+          <button id="btn-mobile">
+            Menu
+            <span
+              id="hamburguer-icon"
+              aria-expanded="false"
+              aria-controls="menu"
+              aria-haspopup="true"
+              aria-label="Abrir Menu"
+            ></span>
           </button>
           <ul id="menu" role="menu">
             <li><a href="">Loja</a></li>
@@ -91,6 +96,21 @@
         </nav>
       </div>
     </header>
+
+    <div id="model-links">
+      <div class="models">
+        <img src="public/icon-iphone.svg" alt="" />
+        <a href="#">iPhone</a>
+      </div>
+      <div class="models">
+        <img src="public/icon-ipad.svg" alt="" />
+        <a href="#">iPad</a>
+      </div>
+      <div class="models">
+        <img src="public/icon-airpods.svg" alt="" />
+        <a href="#">airPods</a>
+      </div>
+    </div>
 
     <div id="welcome">
       <p>Novo</p>
@@ -206,9 +226,9 @@
 
     <section id="video">
       <div class="container">
-        <h2 class="titulo-secao">Apresentamos o iPhone 13</h2>
+        <h2 class="titulo-secao">Apresentamos o iPhone 14</h2>
         <iframe
-          src="https://www.youtube.com/embed/m43rh-pI0P0"
+          src="https://www.youtube.com/embed/FT3ODSg1GFE"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -218,8 +238,26 @@
     </section>
 
     <footer id="rodape">
-    
+      <p>
+        Este site foi desenvolvidos apenas para fins experimentais, todos os
+        direito são da marca oficial
       </p>
+      <p>
+        This site has been developed for experimental purposes only, all rights
+        are the official trademark.
+      </p>
+      <p>Site oficial/ oficial Website:</p>
+      <a href="https://www.apple.com/br/iphone/"
+        >https://www.apple.com/br/iphone/</a
+      >
+      <address id="contato">
+        Dev: João Marcos <br />
+        E-mail: <a href="mailto:jmmsp2003@hotmail.com">jmmsp2003@hotmail.com</a>
+        <br />
+
+        Tel:<a href="tel:+5575988275212">(75)98827-5212 (whatsapp)</a>
+        <br />
+      </address>
     </footer>
     <script src="src/main.js"></script>
   </body>

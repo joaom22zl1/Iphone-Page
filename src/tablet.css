@@ -64,9 +64,39 @@
   color: var(--color-4);
 }
 
+#model-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 50px;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.models img {
+  width: 30px;
+  height: 30px;
+}
+
+.models a {
+  margin: 5px;
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+.models a:hover {
+  color: var(--color-1);
+}
+
 #welcome {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 #welcome p {
@@ -152,7 +182,7 @@
 }
 
 #versoes {
-  padding: 50px 0;
+  padding: 2rem 4rem;
 }
 
 #versoes #modelos {
@@ -208,7 +238,7 @@
 
 #fotos {
   background-color: rgb(226, 226, 226);
-  padding: 50px 0;
+  padding: 2rem 4rem;
 }
 
 #fotos #galeria-fotos {
@@ -262,6 +292,11 @@
 
 #rodape a:hover {
   text-decoration: underline;
+}
+
+#contato {
+  margin: 1rem 0;
+  font-size: 1.4em;
 }
 
 @media (max-width: 1000px) {
@@ -340,5 +375,11 @@
   #nav.active #hamburguer-icon::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+
+  #versoes #modelos {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 50px;
   }
 }
